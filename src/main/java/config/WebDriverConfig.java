@@ -11,5 +11,9 @@ public class WebDriverConfig {
             .usingAnyFreePort();
     public  static WebDriver driver;
 
+    public static void createChromeDriver(){
+        driver=new ChromeDriver(cdservice.build());
+        driver.manage().window().maximize();
+    }
 
 }
